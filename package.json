@@ -1,0 +1,43 @@
+{
+  "name": "templar-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for Templar",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.8.2",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "0.0.5"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "start": "npx hardhat run scripts/deployAll.js",
+    "start2": "npx hardhat run scripts/deployAll2.js",
+    "start3": "npx hardhat run scripts/deployAll3.js",
+    "bondref": "npx hardhat run scripts/bondReferral.js --network hardhat",
+    "lint:sol": "solhint -f table contracts/**/*.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlympusDAO/olympus-contracts.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/OlympusDAO/olympus-contracts/issues"
+  },
+  "homepage": "https://github.com/OlympusDAO/olympus-contracts#readme"
+}
